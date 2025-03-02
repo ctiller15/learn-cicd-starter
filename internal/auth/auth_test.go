@@ -53,6 +53,4 @@ func TestGetAPIKey(t *testing.T) {
 			t.Errorf("unexpected result: expected 12345, got %s", result)
 		}
 	})
-
-	t.Errorf("Finish the tests!")
 }
