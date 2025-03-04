@@ -20,6 +20,9 @@ jobs:
       - name: install goose
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
+      - name: Add ${HOME}/go/bin to PATH
+        run: echo "${HOME}/go/bin" >> $GITHUB_PATH
+
       - name: check goose version
         run: goose -version
 
